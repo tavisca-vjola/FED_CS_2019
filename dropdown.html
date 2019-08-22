@@ -9,26 +9,27 @@
 <header>
     <div class="hello" >
     <h2> Vertical  Navigation</h2>
-    <form autocomplete="off">        
+    <form autocomplete="on">        
     <div class="searchbar">
-      Enter text to search: <input type="text"   list="datalist" onkeyup="suggest(this.value)"id = "myInput" placeholder="enter any element "> 
-      <input type="submit" class="btn" onclick="AddElement()" >
+      Enter text to search: <input type="text"   list="datalist" onkeyup="suggest(this.value)" id = "myInput" placeholder="enter any element "> 
+      <input type="submit" class="btn"  onclick="AddElement()" >
       </div>  
     </form>
       <br>
 </div>
 </div>    
 </header>
-<nav class="active">
-  <ul class="pill-nav">
-  <li><a  href="#home" >Home</a></li>
-  <li> <a id ="demo" href="#news" onclick="myFunction()">File</a></li>
-  <li><a id ="hello" href="#contact" onclick="myfunction2()">Help</a></li>
-  <li> <a id ="sai" href="#about" onclick="myfunction3()">About</a></li>
-</ul>
-</nav>
 
-<main>
+<div class="active">
+  <div class="pill-nav">
+  <a  href="#home" >Home</a></li>
+   <a id ="demo" href="#news" onclick="myFunction()">File</a>
+  <a id ="hello" href="#contact" onclick="myfunction2()">Help</a>
+  <a id ="sai" href="#about" onclick="myfunction3()">About</a>
+  </div>
+</div>
+<main >
+
     <ul id="myUL" >
       
         <li >Avengers</li>
@@ -36,6 +37,7 @@
         <li>Hello world</li>
         <li>Ooh Yeah</li>
         <li>Get to the safe Zone</li>
+
       </ul>
 
 <datalist id="datalist"></datalist>

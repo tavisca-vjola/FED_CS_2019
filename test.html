@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+  <link rel="stylesheet" href="table.css">
+  <script src="table.jsx"></script>
+</head>
+<body class="bg">
+
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2" style="height: 400px">
+    <ul style="list-style-type:none; margin: 0; padding-left: 60px; text-align: center;">
+        <li><a href="#TODO">TODO</a></li>
+          <li><a href="#USER">USER</a></li>
+          <li><a href="#LOGIN">LOGIN</a></li>
+
+      </ul>
+  </div>
+
+  
+
+
+  <div class="item3" style="height: 400px">
+    <div id="TODO" style="height: auto ;margin-bottom:400px;margin-left: 10px;margin-top: 30px">
+        <b style="font-size: 30px; text-align: center"><u>TODO LIST</u></b><br/>
+        <input type="text" id="data">  <button onclick="ToDoAdd()">Add  </button> <br/><br/>
+        <form autocomplete="on">
+        <input type="text" id="search" onkeyup="Suggest(this)">  <input type="search"><br/><br/>  
+        </form>
+                <table id="todotable">
+            <tr>
+                <th>Date</th>
+                <th>Task</th>
+                <th>Action</th>
+              </tr> 
+              
+              </table>
+    </div>
+    <div id="USER" style="height: 470px;padding-top: 50px;text-align: center;font-size: 30px">
+            <pre>
+<b><u>USER DETAILS</u></b><br/>				
+<b>NAME:</b> vanka jola muthya sai<br/>
+<b>EMAIL:</b> saijola12@gmail.com<br/>
+<b>DATE OF BIRTH:</b> 01-01-1998<br/>
+        </pre>
+    </div>
+    <div id="LOGIN" style="height: 470px;padding-top: 50px;text-align: center;font-size: 30px">
+            <pre>
+<b><u>LOGIN</u></b><br/>				
+<b>User ID:</b> <input type="text" id="userid"><br/>
+<b>Password:</b> <input type="text" id="password"><br/>
+<button onclick="validate(userid,password)">Validate</button>
+        </pre>
+    </div>
+  </div>  
+  
+  <div class="item5">
+        <a href="test.html" style="text-decoration: none;border-left:2px solid black !important;padding: 10px;color: black;">HOME</a>
+        <a href="dropdown.html" style="text-decoration: none;border-left:2px solid black !important;padding: 10px;color: black;">ABOUT US</a>
+        <a href="test.html" style="text-decoration: none;border-left:2px solid black !important;padding: 10px;color: black;">CONTACT US</a>
+  </div>
+  
+</div>
+
+</body>
+</html>
